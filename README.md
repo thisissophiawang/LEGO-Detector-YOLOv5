@@ -49,11 +49,13 @@ cd yolov5
 pip install -r requirements.txt
 
 # 5. Install additional required packages
-echo "Installing additional required packages..."
+# Install-YOLOv5-dependencies
+pip install -r requirements.txt
+
+# Install-additional-required-packages
 pip install pandas matplotlib opencv-python pillow PyYAML tqdm torch torchvision seaborn requests
 
-# 6. Evaluate the model
-##  "Evaluating the trained model..."
+# 6. Evaluate the model-training
 python3 train.py --img 640 --batch 16 --epochs 100 --data ../yolo_dataset/data.yaml --weights yolov5s.pt --name lego_detector
 
 #### Evaluation Metrics Explained
