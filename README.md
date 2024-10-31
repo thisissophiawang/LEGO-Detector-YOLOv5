@@ -1,11 +1,25 @@
 
-This project is for detecting LEGO pieces using a YOLOv5 model. It contains custom dataset configurations, training scripts, and validation results.
+This project implements LEGO piece detection using YOLOv5 model. It contains custom dataset configurations, training scripts, and validation results.
+
+## Note about YOLOv5
+The YOLOv5 repository is not included in this project due to its size. You will need to clone it separately during setup following the instructions below.
+However, it's available in the local file which I posted in Canva.
 
 ## Project Structure
-- \`annotations/\`: Contains labeled data for the LEGO pieces.
-- \`training/\`: Training data for the model.
-- \`validation/\`: Validation data for model evaluation.
-- \`yolo_dataset/\`: Dataset used for YOLOv5 training.
+- `annotations/`: Contains labeled data for the LEGO pieces
+- `training_set350/`: Training data (70% of dataset)
+- `validation_set75/`: Validation data (15% of dataset)
+- `testing_set75/`: Testing data (15% of dataset)
+- `yolo_dataset/`: Processed dataset for YOLOv5 training
+- `update_labels.py`: Step 1- Script to copy corresponding annotation files (.xml) for each image in the training, validation, and testing folders,
+ ensuring that each image in these folders has its matching annotation from the main annotations folder.
+- `convert_labels_to_single_lego_label.py`: step 2- Script for unifying labels,let all the labels in the xml files be 'lego'
+- `dataset_converter.py`: step 3- convert the dataset from VOC format to YOLO format,  Prepares data structure required for YOLOv5 training
+- step 4: Training Script (in YOLOv5 repository & local Canva file):
+  - `train.py`: Main training script for YOLO model
+  - Located in cloned YOLOv5 repository， available in local Canva file.
+  - Handles model training with specified parameters
+- `requirements.txt`: List of project dependencies
 
 ## Requirements
 - Python 3.x
@@ -25,20 +39,24 @@ echo "Creating virtual environment..."
 python3 -m venv lego_env
 source lego_env/bin/activate
 
-# 3. Install YOLOv5 dependencies
+# 3.Clone YOLOv5 (required, not included in this repo due to size):
+git clone https://github.com/ultralytics/yolov5
+cd yolov5
+
+# 4.Install YOLOv5 dependencies
 echo "Installing YOLOv5 dependencies..."
 cd yolov5
 pip install -r requirements.txt
 
-# 4. Install additional required packages
+# 5. Install additional required packages
 echo "Installing additional required packages..."
 pip install pandas matplotlib opencv-python pillow PyYAML tqdm torch torchvision seaborn requests
 
-# 5. Start training the YOLOv5 model
+# 6. Start training the YOLOv5 model
 echo "Starting YOLOv5 training..."
 python3 train.py --img 640 --batch 16 --epochs 100 --data ../yolo_dataset/data.yaml --weights yolov5s.pt --name lego_detector
 
-# 6. Evaluate the model
+# 7. Evaluate the model
 echo "Evaluating the trained model..."
 python3 val.py --weights runs/train/lego_detector/weights/best.pt --data ../yolo_dataset/data.yaml --iou-thres 0.5
 
