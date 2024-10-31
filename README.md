@@ -22,7 +22,7 @@ However, it's available in the local file which I posted in Canva.
 - **Step 3: `dataset_converter.py`**  
   - Converts the dataset from VOC format to YOLO format. Prepares the data structure required for YOLOv5 training.
 
-- **Step 4: `train.py` Training Script (in YOLOv5 repository & local Canva file)**  
+- **Step 4: `train.py`   Training Script (in YOLOv5 repository & local Canva file)**  
   - `train.py`: Main training script for YOLO model.
   - Located in the cloned YOLOv5 repository, also available in the local Canva file.
   - Handles model training with specified parameters.
