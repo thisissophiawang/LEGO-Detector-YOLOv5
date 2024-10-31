@@ -76,7 +76,8 @@ However, it's available in the local file which I posted in Canva.
 
 
 ## Visualizations
-Refer to  Lab3/yolov5/runs/train/lego_detector  
+Refer to:
+Lab3/yolov5/runs/train/lego_detector  
 Lab3 sophia/yolov5/runs/val/exp
 
 
