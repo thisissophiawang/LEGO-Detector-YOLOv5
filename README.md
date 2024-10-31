@@ -29,7 +29,7 @@ However, it's available in the local file which I posted in Canva.
 
 
 # Setup and Usage
-## 1. Clone YOLOv5 repository
+# 1. Clone YOLOv5 repository
 cd /Users/sophiawang/Desktop/Lab3
 git clone https://github.com/ultralytics/yolov5
 
