@@ -31,7 +31,8 @@ However, it's available in the local file which I posted in Canva.
 
 
 # Setup and Usage
-# 1. Clone YOLOv5 repository
+# 1. Clone inital repository
+```bash
 cd /Users/sophiawang/Desktop/Lab3
 git clone https://github.com/ultralytics/yolov5
 
@@ -39,7 +40,7 @@ git clone https://github.com/ultralytics/yolov5
 python3 -m venv lego_env
 source lego_env/bin/activate
 
-# 3.Clone YOLOv5 (required, not included in this repo due to size):
+# 3.YOLOv5 setup, clone (required, not included in this repo due to size):
 git clone https://github.com/ultralytics/yolov5
 cd yolov5
 
@@ -56,6 +57,16 @@ pip install pandas matplotlib opencv-python pillow PyYAML tqdm torch torchvision
 
 # 6. Evaluate the model-training
 python3 train.py --img 640 --batch 16 --epochs 100 --data ../yolo_dataset/data.yaml --weights yolov5s.pt --name lego_detector
+
+### Training Command Parameters
+
+- **`--img 640`**: Resizes input images to 640x640 pixels.
+- **`--batch 16`**: Sets batch size to process 16 images at once.
+- **`--epochs 100`**: Runs training for 100 complete passes through the dataset.
+- **`--data ../yolo_dataset/data.yaml`**: Points to the dataset configuration file (paths and classes).
+- **`--weights yolov5s.pt`**: Uses pre-trained YOLOv5 small model weights.
+- **`--name lego_detector`**: Sets the name of the training experiment for easy tracking.
+
 
 #### Evaluation Metrics Explained
 - **mAP@0.5**: Mean Average Precision at an IoU threshold of 0.5
