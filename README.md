@@ -15,9 +15,9 @@ However, it's available in the local file which I posted in Canva.
 ## Step By Step file 
 - Step 1: `update_labels.py`- Script to copy corresponding annotation files (.xml) for each image in the training, validation, and testing folders,
  ensuring that each image in these folders has its matching annotation from the main annotations folder.
-- `convert_labels_to_single_lego_label.py`: step 2- Script for unifying labels,let all the labels in the xml files be 'lego'
-- `dataset_converter.py`: step 3- convert the dataset from VOC format to YOLO format,  Prepares data structure required for YOLOv5 training
-- step 4: Training Script (in YOLOv5 repository & local Canva file):
+- Step 2:`convert_labels_to_single_lego_label.py` Script for unifying labels,let all the labels in the xml files be 'lego'
+- Step 3:`dataset_converter.py`- convert the dataset from VOC format to YOLO format,  Prepares data structure required for YOLOv5 training
+- Step 4: Training Script (in YOLOv5 repository & local Canva file):
   - `train.py`: Main training script for YOLO model
   - Located in cloned YOLOv5 repository， available in local Canva file.
   - Handles model training with specified parameters
