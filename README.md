@@ -75,7 +75,7 @@ However, it's available in the local file which I posted in Canva.
 - **F1 Score**: Harmonic mean of Precision and Recall, providing a single metric for performance
 
 
-## Visualizations
+## Visualizations (under the local Canva file)
 Refer to:
 Lab3/yolov5/runs/train/lego_detector  
 Lab3/yolov5/runs/val/exp
