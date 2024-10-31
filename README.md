@@ -21,6 +21,7 @@ However, it's available in the local file which I posted in Canva.
   - `train.py`: Main training script for YOLO model
   - Located in cloned YOLOv5 repository， available in local Canva file.
   - Handles model training with specified parameters
+   
 - `requirements.txt`: List of project dependencies
 
 ## Requirements
