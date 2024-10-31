@@ -72,12 +72,14 @@ However, it's available in the local file which I posted in Canva.
 - **mAP@0.5**: Mean Average Precision at an IoU threshold of 0.5.
 - **Precision**: Measures the accuracy of positive predictions.
 - **Recall**: Measures the completeness of the model in finding positive samples.
+- **F1 Score**: Harmonic mean of Precision and Recall, providing a single metric for performance
+
 
 ## Visualizations
-Refer to  Lab3/yolov5/runs/train/lego_detector  &   Lab3 sophia/yolov5/runs/val/exp
+Refer to  Lab3/yolov5/runs/train/lego_detector  
+Lab3 sophia/yolov5/runs/val/exp
 
 
 
-- **F1 Score**: Harmonic mean of Precision and Recall, providing a single metric for performance
 
 
