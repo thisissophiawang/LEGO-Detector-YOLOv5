@@ -49,10 +49,10 @@ cd yolov5
 pip install -r requirements.txt
 
 # 5. Install additional required packages
-# Install-YOLOv5-dependencies
+## Install-YOLOv5-dependencies
 pip install -r requirements.txt
 
-# Install-additional-required-packages
+## Install-additional-required-packages
 pip install pandas matplotlib opencv-python pillow PyYAML tqdm torch torchvision seaborn requests
 
 # 6. Evaluate the model-training
