@@ -30,12 +30,10 @@ However, it's available in the local file which I posted in Canva.
 
 # Setup and Usage
 ## 1. Clone YOLOv5 repository
-echo "Cloning YOLOv5 repository..."
 cd /Users/sophiawang/Desktop/Lab3
 git clone https://github.com/ultralytics/yolov5
 
 # 2. Create and activate a virtual environment
-echo "Creating virtual environment..."
 python3 -m venv lego_env
 source lego_env/bin/activate
 
@@ -44,7 +42,6 @@ git clone https://github.com/ultralytics/yolov5
 cd yolov5
 
 # 4.Install YOLOv5 dependencies
-echo "Installing YOLOv5 dependencies..."
 cd yolov5
 pip install -r requirements.txt
 
