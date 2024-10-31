@@ -52,14 +52,9 @@ pip install -r requirements.txt
 echo "Installing additional required packages..."
 pip install pandas matplotlib opencv-python pillow PyYAML tqdm torch torchvision seaborn requests
 
-# 6. Start training the YOLOv5 model
-echo "Starting YOLOv5 training..."
+# 6. Evaluate the model
+##  "Evaluating the trained model..."
 python3 train.py --img 640 --batch 16 --epochs 100 --data ../yolo_dataset/data.yaml --weights yolov5s.pt --name lego_detector
-
-# 7. Evaluate the model
-echo "Evaluating the trained model..."
-python3 val.py --weights runs/train/lego_detector/weights/best.pt --data ../yolo_dataset/data.yaml --iou-thres 0.5
-
 
 #### Evaluation Metrics Explained
 - **mAP@0.5**: Mean Average Precision at an IoU threshold of 0.5
