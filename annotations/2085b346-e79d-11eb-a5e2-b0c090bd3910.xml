@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<annotation>
+    <folder>BrickRay</folder>
+    <filename>2085b346-e79d-11eb-a5e2-b0c090bd3910.jpg</filename>
+    <size>
+        <width>300</width>
+        <height>300</height>
+        <depth>3</depth>
+    </size>
+    <object>
+        <name>19220</name>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>0</xmin>
+            <ymin>12</ymin>
+            <xmax>180</xmax>
+            <ymax>233</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>3069b</name>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>132</xmin>
+            <ymin>162</ymin>
+            <xmax>300</xmax>
+            <ymax>294</ymax>
+        </bndbox>
+    </object>
+</annotation>

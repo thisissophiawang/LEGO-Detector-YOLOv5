@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+    <folder>BrickRay</folder>
+    <filename>0ac4ee06-e7c7-11eb-bda2-b0c090bd3910.jpg</filename>
+    <size>
+        <width>300</width>
+        <height>300</height>
+        <depth>3</depth>
+    </size>
+    <object>
+        <name>lego</name>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>102</xmin>
+            <ymin>37</ymin>
+            <xmax>299</xmax>
+            <ymax>188</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>lego</name>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>0</xmin>
+            <ymin>111</ymin>
+            <xmax>179</xmax>
+            <ymax>260</ymax>
+        </bndbox>
+    </object>
+</annotation>

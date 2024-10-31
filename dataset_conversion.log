@@ -1,0 +1,5 @@
+2024-10-26 09:04:29,546 - INFO - Starting dataset conversion
+2024-10-26 09:04:29,822 - INFO - Processing train split (350 images)
+2024-10-26 09:04:30,113 - INFO - Processing val split (75 images)
+2024-10-26 09:04:30,200 - INFO - Processing test split (75 images)
+2024-10-26 09:04:30,255 - INFO - Dataset conversion completed. YAML file created at /Users/sophiawang/Desktop/Lab3/yolo_dataset/data.yaml
