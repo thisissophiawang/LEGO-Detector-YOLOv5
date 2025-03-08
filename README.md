@@ -15,10 +15,10 @@ However, it's available in the local file which I posted in Canva.
 # HuggingFace Link:
 https://huggingface.co/spaces/Thisissophia/3D-Image-Composer
 
+# Visualizations Output:
+🖼️ **YOLOv5 Validation Batch Example**  
+![YOLOv5 Validation Batch](/train/lego_detector/val_batch1_labels.jpg)
 
-# Visualizations output：
-🖼️ YOLOv5 Validation Batch Example
-/train/lego_detector/val_batch1_labels.jpg
 
 ## Step By Step file 
 - **Step 1: `update_labels.py`**  
