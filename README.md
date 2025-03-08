@@ -12,6 +12,9 @@ However, it's available in the local file which I posted in Canva.
 - `testing_set75/`: Testing data (15% of dataset)
 - `yolo_dataset/`: Processed dataset for YOLOv5 training
 
+## HuggingFace Link
+https://huggingface.co/spaces/Thisissophia/3D-Image-Composer
+
 ## Step By Step file 
 - **Step 1: `update_labels.py`**  
   - Script to copy corresponding annotation files (.xml) for each image in the training, validation, and testing folders, ensuring that each image in these folders has its matching annotation from the main annotations folder.
