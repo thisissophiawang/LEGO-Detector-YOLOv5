@@ -17,7 +17,7 @@ https://huggingface.co/spaces/Thisissophia/3D-Image-Composer
 
 # Visualizations Output:
 🖼️ **YOLOv5 Validation Batch Example**  
-![YOLOv5 Validation Batch](/train/lego_detector/val_batch1_labels.jpg)
+![YOLOv5 Validation Batch](LEGO-Detector-YOLOv5/Visualizations%20output/train/lego_detector/val_batch1_labels.jpg)
 
 
 ## Step By Step file 
