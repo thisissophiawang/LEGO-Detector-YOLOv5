@@ -1,4 +1,5 @@
 # LEGO-Detector-YOLOv5
+![LEGO Logo](https://github.com/thisissophiawang/LEGO-Detector-YOLOv5/blob/main/Visualizations%20output/5847e798cef1014c0b5e480e.png)
 
 This project implements LEGO piece detection using YOLOv5 model. It contains custom dataset configurations, training scripts, and validation results.
 
